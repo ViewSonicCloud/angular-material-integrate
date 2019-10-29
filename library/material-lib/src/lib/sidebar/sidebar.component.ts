@@ -15,7 +15,7 @@ export class SidebarComponent implements OnDestroy, OnInit {
         topGap: 0,
         bottomGap: 0
     }
-    @ViewChild('sidenav') sidenav: MatSidenav
+    @ViewChild('sidenav',{static:true}) sidenav: MatSidenav
     @Input() sidebar?: MenuElement[];
     @Input() topGap = 0;
     @Input() bottomGap = 0;
